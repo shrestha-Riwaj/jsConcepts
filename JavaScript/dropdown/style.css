@@ -1,0 +1,20 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: #eceaff;
+    color: red;
+}
+
+nav{
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;color: purple;
+}
+.logo{
+    width: 250px;
+    height: 100px;
+}

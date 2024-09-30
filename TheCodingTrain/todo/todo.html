@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div id="container">
+       <h1 class="title">
+        To-Do
+       </h1>
+       <hr>
+       <div class="list-item">
+            <div class="input-box">
+                <input class="write" id="add-task" type="text" placeholder="add task">
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="date" id="dueDate">
+                <button class="btn" onclick="addTask()"> + Add Task</button>
+                <!-- <button id="showDeletedTask" onclick="deletedTask()"> - Deleted Task</button> -->
+            </div>
+            
+            <ul class="todo-list">
+                <li class="items">
+                    <input type="checkbox" name="chekcbox" id="checkbox" class="checked" value="task1">
+                        Finished user onboarding
+                    <button class="delete-btn">Delete</button>
+                
+                </li>
+                <li class="items">
+                    <input type="checkbox" name="chekcbox" id="checkbox" class="checked" value="task1">
+                        Finished user onboarding
+                    <button class="delete-btn">Delete</button>
+                
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./todo.js"></script>
+</body>
+</html>

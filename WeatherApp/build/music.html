@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Music Playlist Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Optional custom styles */
+        .mood-selector {
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="container mx-auto p-6 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4 text-center">Mood-Based Music Playlist Generator</h1>
+        <div class="mb-6">
+            <label for="mood" class="block text-lg font-medium text-gray-700 mb-2">Select Your Mood:</label>
+            <select id="mood" name="mood" class="mood-selector block w-full p-2 border border-gray-300 rounded-lg">
+                <option value="">--Choose Mood--</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="energetic">Energetic</option>
+                <option value="relaxed">Relaxed</option>
+            </select>
+        </div>
+        <div id="playlist" class="mt-6">
+            <!-- Playlist will be displayed here -->
+        </div>
+    </div>
+<script src="./music.js"></script>
+    <!-- Your JavaScript will go here -->
+</body>
+</html>

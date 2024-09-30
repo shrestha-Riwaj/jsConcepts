@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-md rounded-lg p-6 w-80">
+        <h1 class="text-2xl font-bold mb-4 text-center">Task Manager</h1>
+        
+        <div class="mb-4">
+            <input type="text" id="taskInput" placeholder="Enter task name" class="border border-gray-300 rounded-lg p-2 w-full" />
+        </div>
+        
+        <button id="addTaskBtn" class="bg-blue-500 text-white rounded-lg p-2 w-full">Add Task</button>
+        
+        <ul id="taskList" class="mt-4 space-y-2">
+            <!-- Tasks will be listed here -->
+        </ul>
+    </div>
+
+    <script src="habit.js"></script>
+</body>
+</html>

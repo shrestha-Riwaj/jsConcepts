@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+     rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    
+    <div class="container w-full h-56 m-2 p-2 border-2
+     border-green-600 flex flex-col items-center gap-4">
+        <h1 class="font-bold text-2xl">Please Enter Your Budget</h1>
+        <input id="input-box" type="text" class="border-2 border-black p-1">
+        <button class="border-2 border-green-400 text lg font-light p-1 rounded-md">Calculate</button>
+    </div>
+
+    <div class="show-list flex m-1 gap-4">
+        <div class="budget flex flex-col items-center m-1">
+            <h2 class="font-bold text-2xl">Budget</h2>
+            <p><i class="ri-cash-line text-4xl"></i></p>
+            <p class="text-2xl">$ 0</p>
+        </div>
+        <div class="expenses flex flex-col items-center m-1">
+            <h2 class="font-bold text-2xl">Expenses</h2>
+            <p><i class="ri-bank-card-2-line text-4xl"></i></p>
+            <p class="text-2xl">$ 0</p>
+        </div>
+        <div class="balance flex flex-col items-center m-1">
+            <h2 class="font-bold text-2xl">Balance</h2>
+            <p><i class="ri-money-dollar-box-line text-4xl"></i></p>
+            <p class="text-2xl">$ 0</p>
+        </div>
+    </div>
+
+    <div class="place-amount w-full h-64 m-2 p-2 border-2
+    border-green-600 flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center gap-4">
+            <h1 class="font-bold text-2xl">Please Enter Your Expenses</h1>
+            <input id="input-box" type="text" class="border-2 border-black p-1">
+        </div>
+        <div class=" flex flex-col items-center gap-4">
+            <h1 class="font-bold text-2xl">Please Enter Your Amount</h1>
+            <input id="input-box" type="text" class="border-2 border-black p-1">
+            <button class="border-2 border-green-400 text lg font-light p-1 rounded-md">Calculate</button>
+        </div>
+    </div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>

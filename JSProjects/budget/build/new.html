@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+     rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class=" bg-slate-300">
+
+    <div class="container flex flex-col items-center">
+        <form class="weatherform m-4">
+            <input type="text" class="city p-1 text-lg font-bold border-2 border-black rounded-md m1 " placeholder="Enter a city">
+            <button class="btn py-1 px-3 font-bold text-lg bg-lime-300 rounded cursor-pointer hover:bg-lime-600" type="submit">Get Weather</button>
+        </form>
+    
+        <div class="card bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+                    p-5 shadow-md flex flex-col items-center">
+            <h1 class="cityDisplay text-lg mb-3 font-bold">Miami</h1>
+            <p class="tempDisplay text-md my-1 font-bold">90</p>
+            <p class="humidityDisplay tempDisplay text-md my-1 font-bold">Humidity: 75%</p>
+            <p class="descDisplay tempDisplay text-md my-1 font-bold">Clear Skies</p>
+            <p class="weatherEmoji tempDisplay text-xl my-1 font-bold">☀️</p>
+            <!-- <p class="errorDisplay tempDisplay text-md my-1 font-bold">Please enter a city</p> -->
+        </div>
+    </div>
+   
+<script src="./index.js"></script>
+</body>
+</html>

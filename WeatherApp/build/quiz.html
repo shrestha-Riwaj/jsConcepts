@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles can go here */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Container for the quiz app -->
+    <div class="container mx-auto p-4">
+
+        <!-- Quiz Creation Form -->
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Create a Quiz</h2>
+            <form id="quizForm" class="space-y-4">
+                <div>
+                    <label for="quizTitle" class="block text-sm font-medium">Quiz Title</label>
+                    <input type="text" id="quizTitle" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg" placeholder="Enter quiz title">
+                </div>
+                <div>
+                    <label for="question" class="block text-sm font-medium">Question</label>
+                    <input type="text" id="question" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg" placeholder="Enter question">
+                </div>
+                <div>
+                    <label for="answer1" class="block text-sm font-medium">Answer 1</label>
+                    <input type="text" id="answer1" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg" placeholder="Enter answer option 1">
+                </div>
+                <div>
+                    <label for="answer2" class="block text-sm font-medium">Answer 2</label>
+                    <input type="text" id="answer2" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg" placeholder="Enter answer option 2">
+                </div>
+                <div>
+                    <label for="answer3" class="block text-sm font-medium">Answer 3</label>
+                    <input type="text" id="answer3" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg" placeholder="Enter answer option 3">
+                </div>
+                <div>
+                    <label for="correctAnswer" class="block text-sm font-medium">Correct Answer</label>
+                    <select id="correctAnswer" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg">
+                        <option value="answer1">Answer 1</option>
+                        <option value="answer2">Answer 2</option>
+                        <option value="answer3">Answer 3</option>
+                    </select>
+                </div>
+                <button type="submit" id="addQuestionBtn" class="bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Add Question</button>
+            </form>
+        </div>
+
+        <!-- Quiz List -->
+        <div id="quizList" class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Available Quizzes</h2>
+            <ul class="space-y-4">
+                <!-- Quiz items will be dynamically inserted here -->
+            </ul>
+        </div>
+
+        <!-- Quiz Display -->
+        <div id="quizDisplay" class="mb-6 hidden">
+            <h2 class="text-2xl font-bold mb-4">Take the Quiz</h2>
+            <form id="quizFormDisplay" class="space-y-4">
+                <!-- Quiz questions will be dynamically inserted here -->
+                <button type="submit" id="submitQuizBtn" class="bg-green-500 text-white p-2 rounded-lg hover:bg-green-600">Submit Quiz</button>
+            </form>
+        </div>
+
+        <!-- Quiz Results -->
+        <div id="quizResults" class="hidden">
+            <h2 class="text-2xl font-bold mb-4">Quiz Results</h2>
+            <div id="resultsContent">
+                <!-- Results will be dynamically inserted here -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+throwing Errors and Exceptions
+using Try...Catch to handle thrown Errors and Exceptions
+Error Types:
+EvalError, InternalError, RangeError, ReferenceError,
+SyntaxError, TypeError, URIError.
+
+
